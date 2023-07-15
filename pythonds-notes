@@ -24,5 +24,41 @@ To summarize, the naive approach compares each element with every other element 
 
 
 
+Consider the array [2, 9, 5, 7, 12] and the target sum of 14.
+
+Initialize an empty hash set.
+
+Start iterating through the array:
+
+For the first element 2:
+
+Calculate the required sum by subtracting the current element from the target sum: required_sum = 14 - 2 = 12.
+
+The hash set is empty, so add 2 to the set.
+
+For the second element 9:
+
+Calculate the required sum: required_sum = 14 - 9 = 5.
+
+Check if 5 is present in the hash set (not found).
+
+Add 9 to the set.
+
+For the third element 5:
+
+Calculate the required sum: required_sum = 14 - 5 = 9.
+
+Check if 9 is present in the hash set (found). Return true.
+
+Since there exists a pair (9 and 5) whose sum is equal to 14, the algorithm would return true in this case.
+
+In summary, the algorithm checks for each element if there exists another element in the array that, when added, gives the target sum. It uses a hash set to efficiently search for the required sum in constant time. If such a pair is found, it returns true; otherwise, it returns false.
+
+
+
+
+
+
+Regenerate response
 
 
