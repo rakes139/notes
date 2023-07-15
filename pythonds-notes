@@ -1,0 +1,28 @@
+q1.Naive Approach: The basic approach to solve this problem is by nested traversal.
+
+Traverse the array using a loop
+For each element:
+Check if there exists another in the array with sum as x
+Return true if yes, else continue
+If no such pair is found, return false
+explanations
+
+In the naive approach, we can use nested traversal to compare each element with every other element in the array. Here's a step-by-step explanation:
+
+Traverse the array using a loop: This means we'll go through each element in the array one by one.
+
+For each element, check if there exists another element in the array with a sum equal to the given target value (x): We compare the current element with every other element in the array to see if their sum is equal to the target value.
+
+Return true if a pair is found: If we find a pair of elements whose sum is equal to the target value, we can return true, indicating that such a pair exists.
+
+Continue if no pair is found: If we go through all possible pairs and none of them have a sum equal to the target value, we continue to the next element in the outer loop.
+
+Return false if no pair is found: If we finish traversing the entire array without finding a pair with the desired sum, we can return false, indicating that no such pair exists.
+
+To summarize, the naive approach compares each element with every other element to check for a pair with the given sum. If a pair is found, it returns true; otherwise, it returns false. However, the naive approach has a time complexity of O(n^2) due to the nested traversal, where n is the size of the array.
+
+
+
+
+
+
